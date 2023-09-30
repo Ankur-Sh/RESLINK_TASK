@@ -1,13 +1,243 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Desktop styles */
+
+.logo {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    height: 4rem;
+}
+html {
+    background-color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.tags {
+    font-size: 1rem;
+    display: block;
+    padding: 0.8rem 0;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+}
+.notification {
+    border: none;
+    background: transparent;
+    color: white;
+}
+.link {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.link:hover {
+    border-radius: 1rem;
+    width: 80%;
+    background-color: rgb(56, 54, 54);
+    padding-left: 1rem;
+}
+.nav_items {
+    padding: 2rem;
+}
+.nav_tags {
+    margin: 5rem 0;
+}
+.nav {
+    position: fixed;
+    min-width: 15%;
+    max-width: 15%;
+    background-color: rgb(44, 42, 42);
+    color: white;
+    height: 100%;
+}
+.Main {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+.Nav {
+    min-width: 15%;
+    max-width: 15%;
+    height: 100%;
+}
+.mark {
+    position: absolute;
+    bottom: 3%;
+}
+.main_nav {
+    display: flex;
+    padding: 2rem 0;
+    min-width: 100%;
+    max-width: 100%;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.main_nav_right_icons {
+    margin-right: 0rem;
+    display: flex;
+}
+.box_right {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin-left: 20%;
+    background-color: rgb(19, 158, 19);
+
+    border-radius: 50%;
+}
+
+.main_nav_left {
+    background-color: rgb(56, 54, 54);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.create_button {
+    border-radius: 0.5rem;
+    background-color: rgb(48, 175, 34);
+    color: white;
+    padding: 0.5rem;
+    margin: 0 1rem;
+}
+
+.search_button {
+    border: none;
+    height: 2rem;
+    background-color: rgb(56, 54, 54);
+
+    color: white;
+}
+.nav_profile {
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.all_content {
+    padding: 1rem 2rem;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    background-color: rgb(56, 54, 54);
+    width: 100%;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.small_boxes {
+    display: flex;
+}
+.profile {
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+}
+.big_box_overlay {
+    border-radius: 15px;
+    background-color: rgb(56, 54, 54);
+    width: 44%;
+    padding: 1rem 2rem;
+    margin: 1rem;
+}
+
+.big_box_left {
+    margin: 1px 0px;
+    padding: 0rem 1rem;
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    background-color: rgb(69, 68, 68);
+}
+
+.big_boxes {
+    display: flex;
+}
+
+/* Responsive styles */
+
+@media screen and (max-width: 1024px) {
+    .Main {
+        margin-left: 3%;
+    }
+
+    .box,
+    .big_box {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Main {
+        margin-left: 6%;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .main_nav {
+        margin: 0 1rem;
+
+        padding: 1rem 4rem;
+    }
+
+    .main_nav_right_icons {
+        margin-right: 1rem;
+        padding: 1rem;
+    }
+
+    .main_nav_left {
+        padding: 1rem;
+        margin-left: 1rem;
+    }
+
+    .box,
+    .big_box {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .box,
+    .big_box {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .box,
+    .big_box {
+        width: 50%;
+    }
+}
+
+/* Mobile styles (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .main_nav {
+        padding: 0.5rem 0;
+    }
+
+    .main_nav_right_icons {
+        margin-right: 0.5rem;
+    }
+
+    .main_nav_left {
+        margin-left: 0.5rem;
+    }
+
+    .box,
+    .big_box {
+        width: 70%;
+    }
 }
